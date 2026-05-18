@@ -110,6 +110,7 @@ class CarInterface(CarInterfaceBase):
     if 0x4FF in fingerprint[0]:
       ret.flags |= ChryslerFlagsSP.NO_MIN_STEERING_SPEED.value
       stock_cp.minSteerSpeed = 0.
+      stock_cp.minEnableSpeed = 0.
 
     ret.intelligentCruiseButtonManagementAvailable = True
 
